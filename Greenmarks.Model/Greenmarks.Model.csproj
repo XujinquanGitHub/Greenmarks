@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0034D65-C921-4C6A-B5C3-97C921204D46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Greenmarks.Model</RootNamespace>
+    <AssemblyName>Greenmarks.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bma_advertpositions.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_adverts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_attributegroups.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_attributes.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_attributevalues.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_bannedips.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_brands.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_browsehistories.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_buysendproducts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_buysendpromotions.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_categories.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_couponproducts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_coupons.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_coupontypes.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_creditlogs.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_eventlogs.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_favoriteproducts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_favoritestores.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_filterwords.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_friendlinks.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_fullcutproducts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_fullcutpromotions.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_fullsendproducts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_fullsendpromotions.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_giftpromotions.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_gifts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_helps.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_loginfaillogs.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_malladminactions.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_malladmingroups.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_malladminlogs.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_navs.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_news.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_newstypes.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_oauth.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_onlinetime.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_onlineusers.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_orderactions.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_orderafterservices.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_orderproducts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_orderrefunds.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_orders.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_productattributes.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_productconsults.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_productconsulttypes.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_productimages.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_productkeywords.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_productreviewquality.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_productreviews.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_products.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_productskus.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_productstats.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_productstocks.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_pvstats.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_regions.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_relateproducts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_searchhistories.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_shipaddresses.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_shipcompanies.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_singlepromotions.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_storeadminlogs.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_storeclasses.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_storeindustries.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_storekeepers.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_storeranks.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_storereviews.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_stores.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_storeshipfees.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_storeshiptemplates.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_suitproducts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_suitpromotions.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_timeproducts.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_topics.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_userdetails.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_userranks.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bma_users.cs">
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GreenmarksModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GreenmarksModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GreenmarksModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GreenmarksModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GreenmarksModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GreenmarksModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="GreenmarksModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GreenmarksModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="GreenmarksModel.edmx.diagram">
+      <DependentUpon>GreenmarksModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GreenmarksModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GreenmarksModel.Context.cs</LastGenOutput>
+      <DependentUpon>GreenmarksModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="GreenmarksModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GreenmarksModel.edmx</DependentUpon>
+      <LastGenOutput>GreenmarksModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

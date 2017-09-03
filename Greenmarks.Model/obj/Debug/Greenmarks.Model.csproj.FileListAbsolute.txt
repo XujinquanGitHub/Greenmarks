@@ -1,0 +1,11 @@
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\bin\Debug\Greenmarks.Model.dll.config
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\bin\Debug\Greenmarks.Model.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\bin\Debug\Greenmarks.Model.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\bin\Debug\EntityFramework.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\bin\Debug\EntityFramework.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\obj\Debug\Greenmarks.Model.csprojResolveAssemblyReference.cache
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\obj\Debug\Greenmarks.Model.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Model\obj\Debug\Greenmarks.Model.pdb

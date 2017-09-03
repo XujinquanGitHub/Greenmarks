@@ -1,0 +1,5 @@
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Common\bin\Debug\Greenmarks.Common.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Common\bin\Debug\Greenmarks.Common.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Common\obj\Debug\Greenmarks.Common.csprojResolveAssemblyReference.cache
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Common\obj\Debug\Greenmarks.Common.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.Common\obj\Debug\Greenmarks.Common.pdb

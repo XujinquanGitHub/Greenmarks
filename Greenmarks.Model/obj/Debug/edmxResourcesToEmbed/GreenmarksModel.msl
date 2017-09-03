@@ -1,0 +1,1145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="brnmallModelStoreContainer" CdmEntityContainer="brnmallEntities">
+    <EntitySetMapping Name="bma_advertpositions">
+      <EntityTypeMapping TypeName="brnmallModel.bma_advertpositions">
+        <MappingFragment StoreEntitySet="bma_advertpositions">
+          <ScalarProperty Name="adposid" ColumnName="adposid" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_adverts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_adverts">
+        <MappingFragment StoreEntitySet="bma_adverts">
+          <ScalarProperty Name="adid" ColumnName="adid" />
+          <ScalarProperty Name="clickcount" ColumnName="clickcount" />
+          <ScalarProperty Name="adposid" ColumnName="adposid" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="endtime" ColumnName="endtime" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="extfield1" ColumnName="extfield1" />
+          <ScalarProperty Name="extfield2" ColumnName="extfield2" />
+          <ScalarProperty Name="extfield3" ColumnName="extfield3" />
+          <ScalarProperty Name="extfield4" ColumnName="extfield4" />
+          <ScalarProperty Name="extfield5" ColumnName="extfield5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_attributegroups">
+      <EntityTypeMapping TypeName="brnmallModel.bma_attributegroups">
+        <MappingFragment StoreEntitySet="bma_attributegroups">
+          <ScalarProperty Name="attrgroupid" ColumnName="attrgroupid" />
+          <ScalarProperty Name="cateid" ColumnName="cateid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_attributes">
+      <EntityTypeMapping TypeName="brnmallModel.bma_attributes">
+        <MappingFragment StoreEntitySet="bma_attributes">
+          <ScalarProperty Name="attrid" ColumnName="attrid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cateid" ColumnName="cateid" />
+          <ScalarProperty Name="attrgroupid" ColumnName="attrgroupid" />
+          <ScalarProperty Name="showtype" ColumnName="showtype" />
+          <ScalarProperty Name="isfilter" ColumnName="isfilter" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_attributevalues">
+      <EntityTypeMapping TypeName="brnmallModel.bma_attributevalues">
+        <MappingFragment StoreEntitySet="bma_attributevalues">
+          <ScalarProperty Name="attrvalueid" ColumnName="attrvalueid" />
+          <ScalarProperty Name="attrvalue" ColumnName="attrvalue" />
+          <ScalarProperty Name="isinput" ColumnName="isinput" />
+          <ScalarProperty Name="attrname" ColumnName="attrname" />
+          <ScalarProperty Name="attrdisplayorder" ColumnName="attrdisplayorder" />
+          <ScalarProperty Name="attrshowtype" ColumnName="attrshowtype" />
+          <ScalarProperty Name="attrvaluedisplayorder" ColumnName="attrvaluedisplayorder" />
+          <ScalarProperty Name="attrgroupid" ColumnName="attrgroupid" />
+          <ScalarProperty Name="attrgroupname" ColumnName="attrgroupname" />
+          <ScalarProperty Name="attrgroupdisplayorder" ColumnName="attrgroupdisplayorder" />
+          <ScalarProperty Name="attrid" ColumnName="attrid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_bannedips">
+      <EntityTypeMapping TypeName="brnmallModel.bma_bannedips">
+        <MappingFragment StoreEntitySet="bma_bannedips">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="liftbantime" ColumnName="liftbantime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_brands">
+      <EntityTypeMapping TypeName="brnmallModel.bma_brands">
+        <MappingFragment StoreEntitySet="bma_brands">
+          <ScalarProperty Name="brandid" ColumnName="brandid" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_browsehistories">
+      <EntityTypeMapping TypeName="brnmallModel.bma_browsehistories">
+        <MappingFragment StoreEntitySet="bma_browsehistories">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="times" ColumnName="times" />
+          <ScalarProperty Name="updatetime" ColumnName="updatetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_buysendproducts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_buysendproducts">
+        <MappingFragment StoreEntitySet="bma_buysendproducts">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_buysendpromotions">
+      <EntityTypeMapping TypeName="brnmallModel.bma_buysendpromotions">
+        <MappingFragment StoreEntitySet="bma_buysendpromotions">
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="endtime" ColumnName="endtime" />
+          <ScalarProperty Name="userranklower" ColumnName="userranklower" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="buycount" ColumnName="buycount" />
+          <ScalarProperty Name="sendcount" ColumnName="sendcount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_categories">
+      <EntityTypeMapping TypeName="brnmallModel.bma_categories">
+        <MappingFragment StoreEntitySet="bma_categories">
+          <ScalarProperty Name="cateid" ColumnName="cateid" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="pricerange" ColumnName="pricerange" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="layer" ColumnName="layer" />
+          <ScalarProperty Name="haschild" ColumnName="haschild" />
+          <ScalarProperty Name="path" ColumnName="path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_couponproducts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_couponproducts">
+        <MappingFragment StoreEntitySet="bma_couponproducts">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="coupontypeid" ColumnName="coupontypeid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_coupons">
+      <EntityTypeMapping TypeName="brnmallModel.bma_coupons">
+        <MappingFragment StoreEntitySet="bma_coupons">
+          <ScalarProperty Name="couponid" ColumnName="couponid" />
+          <ScalarProperty Name="couponsn" ColumnName="couponsn" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="coupontypeid" ColumnName="coupontypeid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="usetime" ColumnName="usetime" />
+          <ScalarProperty Name="useip" ColumnName="useip" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="activatetime" ColumnName="activatetime" />
+          <ScalarProperty Name="activateip" ColumnName="activateip" />
+          <ScalarProperty Name="createuid" ColumnName="createuid" />
+          <ScalarProperty Name="createoid" ColumnName="createoid" />
+          <ScalarProperty Name="createtime" ColumnName="createtime" />
+          <ScalarProperty Name="createip" ColumnName="createip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_coupontypes">
+      <EntityTypeMapping TypeName="brnmallModel.bma_coupontypes">
+        <MappingFragment StoreEntitySet="bma_coupontypes">
+          <ScalarProperty Name="coupontypeid" ColumnName="coupontypeid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="sendmode" ColumnName="sendmode" />
+          <ScalarProperty Name="getmode" ColumnName="getmode" />
+          <ScalarProperty Name="usemode" ColumnName="usemode" />
+          <ScalarProperty Name="userranklower" ColumnName="userranklower" />
+          <ScalarProperty Name="orderamountlower" ColumnName="orderamountlower" />
+          <ScalarProperty Name="limitstorecid" ColumnName="limitstorecid" />
+          <ScalarProperty Name="limitproduct" ColumnName="limitproduct" />
+          <ScalarProperty Name="sendstarttime" ColumnName="sendstarttime" />
+          <ScalarProperty Name="sendendtime" ColumnName="sendendtime" />
+          <ScalarProperty Name="useexpiretime" ColumnName="useexpiretime" />
+          <ScalarProperty Name="usestarttime" ColumnName="usestarttime" />
+          <ScalarProperty Name="useendtime" ColumnName="useendtime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_creditlogs">
+      <EntityTypeMapping TypeName="brnmallModel.bma_creditlogs">
+        <MappingFragment StoreEntitySet="bma_creditlogs">
+          <ScalarProperty Name="logid" ColumnName="logid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="paycredits" ColumnName="paycredits" />
+          <ScalarProperty Name="rankcredits" ColumnName="rankcredits" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="actioncode" ColumnName="actioncode" />
+          <ScalarProperty Name="actiontime" ColumnName="actiontime" />
+          <ScalarProperty Name="actiondes" ColumnName="actiondes" />
+          <ScalarProperty Name="operator" ColumnName="operator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_eventlogs">
+      <EntityTypeMapping TypeName="brnmallModel.bma_eventlogs">
+        <MappingFragment StoreEntitySet="bma_eventlogs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="key" ColumnName="key" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="server" ColumnName="server" />
+          <ScalarProperty Name="executetime" ColumnName="executetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_favoriteproducts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_favoriteproducts">
+        <MappingFragment StoreEntitySet="bma_favoriteproducts">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_favoritestores">
+      <EntityTypeMapping TypeName="brnmallModel.bma_favoritestores">
+        <MappingFragment StoreEntitySet="bma_favoritestores">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_filterwords">
+      <EntityTypeMapping TypeName="brnmallModel.bma_filterwords">
+        <MappingFragment StoreEntitySet="bma_filterwords">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="match" ColumnName="match" />
+          <ScalarProperty Name="replace" ColumnName="replace" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_fullcutproducts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_fullcutproducts">
+        <MappingFragment StoreEntitySet="bma_fullcutproducts">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_fullcutpromotions">
+      <EntityTypeMapping TypeName="brnmallModel.bma_fullcutpromotions">
+        <MappingFragment StoreEntitySet="bma_fullcutpromotions">
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="endtime" ColumnName="endtime" />
+          <ScalarProperty Name="userranklower" ColumnName="userranklower" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="limitmoney1" ColumnName="limitmoney1" />
+          <ScalarProperty Name="cutmoney1" ColumnName="cutmoney1" />
+          <ScalarProperty Name="limitmoney2" ColumnName="limitmoney2" />
+          <ScalarProperty Name="cutmoney2" ColumnName="cutmoney2" />
+          <ScalarProperty Name="limitmoney3" ColumnName="limitmoney3" />
+          <ScalarProperty Name="cutmoney3" ColumnName="cutmoney3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_fullsendproducts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_fullsendproducts">
+        <MappingFragment StoreEntitySet="bma_fullsendproducts">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_fullsendpromotions">
+      <EntityTypeMapping TypeName="brnmallModel.bma_fullsendpromotions">
+        <MappingFragment StoreEntitySet="bma_fullsendpromotions">
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="endtime" ColumnName="endtime" />
+          <ScalarProperty Name="userranklower" ColumnName="userranklower" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="limitmoney" ColumnName="limitmoney" />
+          <ScalarProperty Name="addmoney" ColumnName="addmoney" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_giftpromotions">
+      <EntityTypeMapping TypeName="brnmallModel.bma_giftpromotions">
+        <MappingFragment StoreEntitySet="bma_giftpromotions">
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="starttime1" ColumnName="starttime1" />
+          <ScalarProperty Name="endtime1" ColumnName="endtime1" />
+          <ScalarProperty Name="starttime2" ColumnName="starttime2" />
+          <ScalarProperty Name="endtime2" ColumnName="endtime2" />
+          <ScalarProperty Name="starttime3" ColumnName="starttime3" />
+          <ScalarProperty Name="endtime3" ColumnName="endtime3" />
+          <ScalarProperty Name="userranklower" ColumnName="userranklower" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="quotaupper" ColumnName="quotaupper" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_gifts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_gifts">
+        <MappingFragment StoreEntitySet="bma_gifts">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="giftid" ColumnName="giftid" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_loginfaillogs">
+      <EntityTypeMapping TypeName="brnmallModel.bma_loginfaillogs">
+        <MappingFragment StoreEntitySet="bma_loginfaillogs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="loginip" ColumnName="loginip" />
+          <ScalarProperty Name="failtimes" ColumnName="failtimes" />
+          <ScalarProperty Name="lastlogintime" ColumnName="lastlogintime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_malladmingroups">
+      <EntityTypeMapping TypeName="brnmallModel.bma_malladmingroups">
+        <MappingFragment StoreEntitySet="bma_malladmingroups">
+          <ScalarProperty Name="mallagid" ColumnName="mallagid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="actionlist" ColumnName="actionlist" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_malladminlogs">
+      <EntityTypeMapping TypeName="brnmallModel.bma_malladminlogs">
+        <MappingFragment StoreEntitySet="bma_malladminlogs">
+          <ScalarProperty Name="logid" ColumnName="logid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="mallagid" ColumnName="mallagid" />
+          <ScalarProperty Name="mallagtitle" ColumnName="mallagtitle" />
+          <ScalarProperty Name="operation" ColumnName="operation" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="operatetime" ColumnName="operatetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_news">
+      <EntityTypeMapping TypeName="brnmallModel.bma_news">
+        <MappingFragment StoreEntitySet="bma_news">
+          <ScalarProperty Name="newsid" ColumnName="newsid" />
+          <ScalarProperty Name="newstypeid" ColumnName="newstypeid" />
+          <ScalarProperty Name="isshow" ColumnName="isshow" />
+          <ScalarProperty Name="istop" ColumnName="istop" />
+          <ScalarProperty Name="ishome" ColumnName="ishome" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="body" ColumnName="body" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_newstypes">
+      <EntityTypeMapping TypeName="brnmallModel.bma_newstypes">
+        <MappingFragment StoreEntitySet="bma_newstypes">
+          <ScalarProperty Name="newstypeid" ColumnName="newstypeid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_oauth">
+      <EntityTypeMapping TypeName="brnmallModel.bma_oauth">
+        <MappingFragment StoreEntitySet="bma_oauth">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="openid" ColumnName="openid" />
+          <ScalarProperty Name="server" ColumnName="server" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_onlinetime">
+      <EntityTypeMapping TypeName="brnmallModel.bma_onlinetime">
+        <MappingFragment StoreEntitySet="bma_onlinetime">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="week" ColumnName="week" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="updatetime" ColumnName="updatetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_onlineusers">
+      <EntityTypeMapping TypeName="brnmallModel.bma_onlineusers">
+        <MappingFragment StoreEntitySet="bma_onlineusers">
+          <ScalarProperty Name="olid" ColumnName="olid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="sid" ColumnName="sid" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="regionid" ColumnName="regionid" />
+          <ScalarProperty Name="updatetime" ColumnName="updatetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_orderactions">
+      <EntityTypeMapping TypeName="brnmallModel.bma_orderactions">
+        <MappingFragment StoreEntitySet="bma_orderactions">
+          <ScalarProperty Name="aid" ColumnName="aid" />
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="actiontype" ColumnName="actiontype" />
+          <ScalarProperty Name="actiontime" ColumnName="actiontime" />
+          <ScalarProperty Name="actiondes" ColumnName="actiondes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_orderafterservices">
+      <EntityTypeMapping TypeName="brnmallModel.bma_orderafterservices">
+        <MappingFragment StoreEntitySet="bma_orderafterservices">
+          <ScalarProperty Name="asid" ColumnName="asid" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="cateid" ColumnName="cateid" />
+          <ScalarProperty Name="brandid" ColumnName="brandid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="pname" ColumnName="pname" />
+          <ScalarProperty Name="pshowimg" ColumnName="pshowimg" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="applyreason" ColumnName="applyreason" />
+          <ScalarProperty Name="applytime" ColumnName="applytime" />
+          <ScalarProperty Name="checkresult" ColumnName="checkresult" />
+          <ScalarProperty Name="checktime" ColumnName="checktime" />
+          <ScalarProperty Name="shipcoid1" ColumnName="shipcoid1" />
+          <ScalarProperty Name="shipconame1" ColumnName="shipconame1" />
+          <ScalarProperty Name="shipsn1" ColumnName="shipsn1" />
+          <ScalarProperty Name="regionid" ColumnName="regionid" />
+          <ScalarProperty Name="consignee" ColumnName="consignee" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="sendtime" ColumnName="sendtime" />
+          <ScalarProperty Name="receivetime" ColumnName="receivetime" />
+          <ScalarProperty Name="shipcoid2" ColumnName="shipcoid2" />
+          <ScalarProperty Name="shipconame2" ColumnName="shipconame2" />
+          <ScalarProperty Name="shipsn2" ColumnName="shipsn2" />
+          <ScalarProperty Name="backtime" ColumnName="backtime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_orderproducts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_orderproducts">
+        <MappingFragment StoreEntitySet="bma_orderproducts">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="sid" ColumnName="sid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="psn" ColumnName="psn" />
+          <ScalarProperty Name="cateid" ColumnName="cateid" />
+          <ScalarProperty Name="brandid" ColumnName="brandid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="storecid" ColumnName="storecid" />
+          <ScalarProperty Name="storestid" ColumnName="storestid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="showimg" ColumnName="showimg" />
+          <ScalarProperty Name="discountprice" ColumnName="discountprice" />
+          <ScalarProperty Name="shopprice" ColumnName="shopprice" />
+          <ScalarProperty Name="costprice" ColumnName="costprice" />
+          <ScalarProperty Name="marketprice" ColumnName="marketprice" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="isreview" ColumnName="isreview" />
+          <ScalarProperty Name="realcount" ColumnName="realcount" />
+          <ScalarProperty Name="buycount" ColumnName="buycount" />
+          <ScalarProperty Name="sendcount" ColumnName="sendcount" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="paycredits" ColumnName="paycredits" />
+          <ScalarProperty Name="coupontypeid" ColumnName="coupontypeid" />
+          <ScalarProperty Name="extcode1" ColumnName="extcode1" />
+          <ScalarProperty Name="extcode2" ColumnName="extcode2" />
+          <ScalarProperty Name="extcode3" ColumnName="extcode3" />
+          <ScalarProperty Name="extcode4" ColumnName="extcode4" />
+          <ScalarProperty Name="extcode5" ColumnName="extcode5" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_orderrefunds">
+      <EntityTypeMapping TypeName="brnmallModel.bma_orderrefunds">
+        <MappingFragment StoreEntitySet="bma_orderrefunds">
+          <ScalarProperty Name="refundid" ColumnName="refundid" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="storename" ColumnName="storename" />
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="osn" ColumnName="osn" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="asid" ColumnName="asid" />
+          <ScalarProperty Name="paysystemname" ColumnName="paysystemname" />
+          <ScalarProperty Name="payfriendname" ColumnName="payfriendname" />
+          <ScalarProperty Name="paysn" ColumnName="paysn" />
+          <ScalarProperty Name="paymoney" ColumnName="paymoney" />
+          <ScalarProperty Name="refundmoney" ColumnName="refundmoney" />
+          <ScalarProperty Name="applytime" ColumnName="applytime" />
+          <ScalarProperty Name="refundsn" ColumnName="refundsn" />
+          <ScalarProperty Name="refundtime" ColumnName="refundtime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_orders">
+      <EntityTypeMapping TypeName="brnmallModel.bma_orders">
+        <MappingFragment StoreEntitySet="bma_orders">
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="osn" ColumnName="osn" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="orderstate" ColumnName="orderstate" />
+          <ScalarProperty Name="productamount" ColumnName="productamount" />
+          <ScalarProperty Name="orderamount" ColumnName="orderamount" />
+          <ScalarProperty Name="surplusmoney" ColumnName="surplusmoney" />
+          <ScalarProperty Name="isreview" ColumnName="isreview" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="storename" ColumnName="storename" />
+          <ScalarProperty Name="shipsn" ColumnName="shipsn" />
+          <ScalarProperty Name="shipcoid" ColumnName="shipcoid" />
+          <ScalarProperty Name="shipconame" ColumnName="shipconame" />
+          <ScalarProperty Name="shiptime" ColumnName="shiptime" />
+          <ScalarProperty Name="paymode" ColumnName="paymode" />
+          <ScalarProperty Name="paysn" ColumnName="paysn" />
+          <ScalarProperty Name="paysystemname" ColumnName="paysystemname" />
+          <ScalarProperty Name="payfriendname" ColumnName="payfriendname" />
+          <ScalarProperty Name="paytime" ColumnName="paytime" />
+          <ScalarProperty Name="regionid" ColumnName="regionid" />
+          <ScalarProperty Name="consignee" ColumnName="consignee" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="besttime" ColumnName="besttime" />
+          <ScalarProperty Name="shipfee" ColumnName="shipfee" />
+          <ScalarProperty Name="fullcut" ColumnName="fullcut" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="paycreditcount" ColumnName="paycreditcount" />
+          <ScalarProperty Name="paycreditmoney" ColumnName="paycreditmoney" />
+          <ScalarProperty Name="couponmoney" ColumnName="couponmoney" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="buyerremark" ColumnName="buyerremark" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_productattributes">
+      <EntityTypeMapping TypeName="brnmallModel.bma_productattributes">
+        <MappingFragment StoreEntitySet="bma_productattributes">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="attrid" ColumnName="attrid" />
+          <ScalarProperty Name="attrvalueid" ColumnName="attrvalueid" />
+          <ScalarProperty Name="inputvalue" ColumnName="inputvalue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_productconsults">
+      <EntityTypeMapping TypeName="brnmallModel.bma_productconsults">
+        <MappingFragment StoreEntitySet="bma_productconsults">
+          <ScalarProperty Name="consultid" ColumnName="consultid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="consulttypeid" ColumnName="consulttypeid" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="consultuid" ColumnName="consultuid" />
+          <ScalarProperty Name="replyuid" ColumnName="replyuid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="consulttime" ColumnName="consulttime" />
+          <ScalarProperty Name="replytime" ColumnName="replytime" />
+          <ScalarProperty Name="consultmessage" ColumnName="consultmessage" />
+          <ScalarProperty Name="replymessage" ColumnName="replymessage" />
+          <ScalarProperty Name="consultnickname" ColumnName="consultnickname" />
+          <ScalarProperty Name="replynickname" ColumnName="replynickname" />
+          <ScalarProperty Name="pname" ColumnName="pname" />
+          <ScalarProperty Name="pshowimg" ColumnName="pshowimg" />
+          <ScalarProperty Name="consultip" ColumnName="consultip" />
+          <ScalarProperty Name="replyip" ColumnName="replyip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_productconsulttypes">
+      <EntityTypeMapping TypeName="brnmallModel.bma_productconsulttypes">
+        <MappingFragment StoreEntitySet="bma_productconsulttypes">
+          <ScalarProperty Name="consulttypeid" ColumnName="consulttypeid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_productimages">
+      <EntityTypeMapping TypeName="brnmallModel.bma_productimages">
+        <MappingFragment StoreEntitySet="bma_productimages">
+          <ScalarProperty Name="pimgid" ColumnName="pimgid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="showimg" ColumnName="showimg" />
+          <ScalarProperty Name="ismain" ColumnName="ismain" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_productkeywords">
+      <EntityTypeMapping TypeName="brnmallModel.bma_productkeywords">
+        <MappingFragment StoreEntitySet="bma_productkeywords">
+          <ScalarProperty Name="keywordid" ColumnName="keywordid" />
+          <ScalarProperty Name="keyword" ColumnName="keyword" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="relevancy" ColumnName="relevancy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_productreviewquality">
+      <EntityTypeMapping TypeName="brnmallModel.bma_productreviewquality">
+        <MappingFragment StoreEntitySet="bma_productreviewquality">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="reviewid" ColumnName="reviewid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="votetime" ColumnName="votetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_productreviews">
+      <EntityTypeMapping TypeName="brnmallModel.bma_productreviews">
+        <MappingFragment StoreEntitySet="bma_productreviews">
+          <ScalarProperty Name="reviewid" ColumnName="reviewid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="oprid" ColumnName="oprid" />
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="star" ColumnName="star" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="reviewtime" ColumnName="reviewtime" />
+          <ScalarProperty Name="paycredits" ColumnName="paycredits" />
+          <ScalarProperty Name="pname" ColumnName="pname" />
+          <ScalarProperty Name="pshowimg" ColumnName="pshowimg" />
+          <ScalarProperty Name="buytime" ColumnName="buytime" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_products">
+      <EntityTypeMapping TypeName="brnmallModel.bma_products">
+        <MappingFragment StoreEntitySet="bma_products">
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="psn" ColumnName="psn" />
+          <ScalarProperty Name="cateid" ColumnName="cateid" />
+          <ScalarProperty Name="brandid" ColumnName="brandid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="storecid" ColumnName="storecid" />
+          <ScalarProperty Name="storestid" ColumnName="storestid" />
+          <ScalarProperty Name="skugid" ColumnName="skugid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="shopprice" ColumnName="shopprice" />
+          <ScalarProperty Name="marketprice" ColumnName="marketprice" />
+          <ScalarProperty Name="costprice" ColumnName="costprice" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="isbest" ColumnName="isbest" />
+          <ScalarProperty Name="ishot" ColumnName="ishot" />
+          <ScalarProperty Name="isnew" ColumnName="isnew" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="showimg" ColumnName="showimg" />
+          <ScalarProperty Name="salecount" ColumnName="salecount" />
+          <ScalarProperty Name="visitcount" ColumnName="visitcount" />
+          <ScalarProperty Name="reviewcount" ColumnName="reviewcount" />
+          <ScalarProperty Name="star1" ColumnName="star1" />
+          <ScalarProperty Name="star2" ColumnName="star2" />
+          <ScalarProperty Name="star3" ColumnName="star3" />
+          <ScalarProperty Name="star4" ColumnName="star4" />
+          <ScalarProperty Name="star5" ColumnName="star5" />
+          <ScalarProperty Name="addtime" ColumnName="addtime" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_productskus">
+      <EntityTypeMapping TypeName="brnmallModel.bma_productskus">
+        <MappingFragment StoreEntitySet="bma_productskus">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="skugid" ColumnName="skugid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="attrid" ColumnName="attrid" />
+          <ScalarProperty Name="attrvalueid" ColumnName="attrvalueid" />
+          <ScalarProperty Name="inputvalue" ColumnName="inputvalue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_productstats">
+      <EntityTypeMapping TypeName="brnmallModel.bma_productstats">
+        <MappingFragment StoreEntitySet="bma_productstats">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="count" ColumnName="count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_productstocks">
+      <EntityTypeMapping TypeName="brnmallModel.bma_productstocks">
+        <MappingFragment StoreEntitySet="bma_productstocks">
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="limit" ColumnName="limit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_pvstats">
+      <EntityTypeMapping TypeName="brnmallModel.bma_pvstats">
+        <MappingFragment StoreEntitySet="bma_pvstats">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="count" ColumnName="count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_regions">
+      <EntityTypeMapping TypeName="brnmallModel.bma_regions">
+        <MappingFragment StoreEntitySet="bma_regions">
+          <ScalarProperty Name="regionid" ColumnName="regionid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="spell" ColumnName="spell" />
+          <ScalarProperty Name="shortspell" ColumnName="shortspell" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="layer" ColumnName="layer" />
+          <ScalarProperty Name="provinceid" ColumnName="provinceid" />
+          <ScalarProperty Name="provincename" ColumnName="provincename" />
+          <ScalarProperty Name="cityid" ColumnName="cityid" />
+          <ScalarProperty Name="cityname" ColumnName="cityname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_relateproducts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_relateproducts">
+        <MappingFragment StoreEntitySet="bma_relateproducts">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="relatepid" ColumnName="relatepid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_searchhistories">
+      <EntityTypeMapping TypeName="brnmallModel.bma_searchhistories">
+        <MappingFragment StoreEntitySet="bma_searchhistories">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="times" ColumnName="times" />
+          <ScalarProperty Name="updatetime" ColumnName="updatetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_shipaddresses">
+      <EntityTypeMapping TypeName="brnmallModel.bma_shipaddresses">
+        <MappingFragment StoreEntitySet="bma_shipaddresses">
+          <ScalarProperty Name="said" ColumnName="said" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="regionid" ColumnName="regionid" />
+          <ScalarProperty Name="isdefault" ColumnName="isdefault" />
+          <ScalarProperty Name="alias" ColumnName="alias" />
+          <ScalarProperty Name="consignee" ColumnName="consignee" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_singlepromotions">
+      <EntityTypeMapping TypeName="brnmallModel.bma_singlepromotions">
+        <MappingFragment StoreEntitySet="bma_singlepromotions">
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="starttime1" ColumnName="starttime1" />
+          <ScalarProperty Name="endtime1" ColumnName="endtime1" />
+          <ScalarProperty Name="starttime2" ColumnName="starttime2" />
+          <ScalarProperty Name="endtime2" ColumnName="endtime2" />
+          <ScalarProperty Name="starttime3" ColumnName="starttime3" />
+          <ScalarProperty Name="endtime3" ColumnName="endtime3" />
+          <ScalarProperty Name="userranklower" ColumnName="userranklower" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="slogan" ColumnName="slogan" />
+          <ScalarProperty Name="discounttype" ColumnName="discounttype" />
+          <ScalarProperty Name="discountvalue" ColumnName="discountvalue" />
+          <ScalarProperty Name="coupontypeid" ColumnName="coupontypeid" />
+          <ScalarProperty Name="paycredits" ColumnName="paycredits" />
+          <ScalarProperty Name="isstock" ColumnName="isstock" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="quotalower" ColumnName="quotalower" />
+          <ScalarProperty Name="quotaupper" ColumnName="quotaupper" />
+          <ScalarProperty Name="allowbuycount" ColumnName="allowbuycount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_storeadminlogs">
+      <EntityTypeMapping TypeName="brnmallModel.bma_storeadminlogs">
+        <MappingFragment StoreEntitySet="bma_storeadminlogs">
+          <ScalarProperty Name="logid" ColumnName="logid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="storename" ColumnName="storename" />
+          <ScalarProperty Name="operation" ColumnName="operation" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="operatetime" ColumnName="operatetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_storeclasses">
+      <EntityTypeMapping TypeName="brnmallModel.bma_storeclasses">
+        <MappingFragment StoreEntitySet="bma_storeclasses">
+          <ScalarProperty Name="storecid" ColumnName="storecid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="layer" ColumnName="layer" />
+          <ScalarProperty Name="haschild" ColumnName="haschild" />
+          <ScalarProperty Name="path" ColumnName="path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_storeindustries">
+      <EntityTypeMapping TypeName="brnmallModel.bma_storeindustries">
+        <MappingFragment StoreEntitySet="bma_storeindustries">
+          <ScalarProperty Name="storeiid" ColumnName="storeiid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_storekeepers">
+      <EntityTypeMapping TypeName="brnmallModel.bma_storekeepers">
+        <MappingFragment StoreEntitySet="bma_storekeepers">
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="idcard" ColumnName="idcard" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_storeranks">
+      <EntityTypeMapping TypeName="brnmallModel.bma_storeranks">
+        <MappingFragment StoreEntitySet="bma_storeranks">
+          <ScalarProperty Name="storerid" ColumnName="storerid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+          <ScalarProperty Name="honestieslower" ColumnName="honestieslower" />
+          <ScalarProperty Name="honestiesupper" ColumnName="honestiesupper" />
+          <ScalarProperty Name="productcount" ColumnName="productcount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_storereviews">
+      <EntityTypeMapping TypeName="brnmallModel.bma_storereviews">
+        <MappingFragment StoreEntitySet="bma_storereviews">
+          <ScalarProperty Name="reviewid" ColumnName="reviewid" />
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="descriptionstar" ColumnName="descriptionstar" />
+          <ScalarProperty Name="servicestar" ColumnName="servicestar" />
+          <ScalarProperty Name="shipstar" ColumnName="shipstar" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="reviewtime" ColumnName="reviewtime" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_stores">
+      <EntityTypeMapping TypeName="brnmallModel.bma_stores">
+        <MappingFragment StoreEntitySet="bma_stores">
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="regionid" ColumnName="regionid" />
+          <ScalarProperty Name="storerid" ColumnName="storerid" />
+          <ScalarProperty Name="storeiid" ColumnName="storeiid" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="createtime" ColumnName="createtime" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="qq" ColumnName="qq" />
+          <ScalarProperty Name="ww" ColumnName="ww" />
+          <ScalarProperty Name="depoint" ColumnName="depoint" />
+          <ScalarProperty Name="sepoint" ColumnName="sepoint" />
+          <ScalarProperty Name="shpoint" ColumnName="shpoint" />
+          <ScalarProperty Name="honesties" ColumnName="honesties" />
+          <ScalarProperty Name="stateendtime" ColumnName="stateendtime" />
+          <ScalarProperty Name="theme" ColumnName="theme" />
+          <ScalarProperty Name="banner" ColumnName="banner" />
+          <ScalarProperty Name="announcement" ColumnName="announcement" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_storeshipfees">
+      <EntityTypeMapping TypeName="brnmallModel.bma_storeshipfees">
+        <MappingFragment StoreEntitySet="bma_storeshipfees">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="storestid" ColumnName="storestid" />
+          <ScalarProperty Name="regionid" ColumnName="regionid" />
+          <ScalarProperty Name="startvalue" ColumnName="startvalue" />
+          <ScalarProperty Name="startfee" ColumnName="startfee" />
+          <ScalarProperty Name="addvalue" ColumnName="addvalue" />
+          <ScalarProperty Name="addfee" ColumnName="addfee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_storeshiptemplates">
+      <EntityTypeMapping TypeName="brnmallModel.bma_storeshiptemplates">
+        <MappingFragment StoreEntitySet="bma_storeshiptemplates">
+          <ScalarProperty Name="storestid" ColumnName="storestid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="free" ColumnName="free" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="title" ColumnName="title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_suitproducts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_suitproducts">
+        <MappingFragment StoreEntitySet="bma_suitproducts">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="number" ColumnName="number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_suitpromotions">
+      <EntityTypeMapping TypeName="brnmallModel.bma_suitpromotions">
+        <MappingFragment StoreEntitySet="bma_suitpromotions">
+          <ScalarProperty Name="pmid" ColumnName="pmid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="starttime1" ColumnName="starttime1" />
+          <ScalarProperty Name="endtime1" ColumnName="endtime1" />
+          <ScalarProperty Name="starttime2" ColumnName="starttime2" />
+          <ScalarProperty Name="endtime2" ColumnName="endtime2" />
+          <ScalarProperty Name="starttime3" ColumnName="starttime3" />
+          <ScalarProperty Name="endtime3" ColumnName="endtime3" />
+          <ScalarProperty Name="userranklower" ColumnName="userranklower" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="quotaupper" ColumnName="quotaupper" />
+          <ScalarProperty Name="onlyonce" ColumnName="onlyonce" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_timeproducts">
+      <EntityTypeMapping TypeName="brnmallModel.bma_timeproducts">
+        <MappingFragment StoreEntitySet="bma_timeproducts">
+          <ScalarProperty Name="recordid" ColumnName="recordid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="onsalestate" ColumnName="onsalestate" />
+          <ScalarProperty Name="outsalestate" ColumnName="outsalestate" />
+          <ScalarProperty Name="onsaletime" ColumnName="onsaletime" />
+          <ScalarProperty Name="outsaletime" ColumnName="outsaletime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_topics">
+      <EntityTypeMapping TypeName="brnmallModel.bma_topics">
+        <MappingFragment StoreEntitySet="bma_topics">
+          <ScalarProperty Name="topicid" ColumnName="topicid" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="endtime" ColumnName="endtime" />
+          <ScalarProperty Name="isshow" ColumnName="isshow" />
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="headhtml" ColumnName="headhtml" />
+          <ScalarProperty Name="bodyhtml" ColumnName="bodyhtml" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_userdetails">
+      <EntityTypeMapping TypeName="brnmallModel.bma_userdetails">
+        <MappingFragment StoreEntitySet="bma_userdetails">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="lastvisittime" ColumnName="lastvisittime" />
+          <ScalarProperty Name="lastvisitip" ColumnName="lastvisitip" />
+          <ScalarProperty Name="lastvisitrgid" ColumnName="lastvisitrgid" />
+          <ScalarProperty Name="registertime" ColumnName="registertime" />
+          <ScalarProperty Name="registerip" ColumnName="registerip" />
+          <ScalarProperty Name="registerrgid" ColumnName="registerrgid" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="realname" ColumnName="realname" />
+          <ScalarProperty Name="bday" ColumnName="bday" />
+          <ScalarProperty Name="idcard" ColumnName="idcard" />
+          <ScalarProperty Name="regionid" ColumnName="regionid" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="bio" ColumnName="bio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_userranks">
+      <EntityTypeMapping TypeName="brnmallModel.bma_userranks">
+        <MappingFragment StoreEntitySet="bma_userranks">
+          <ScalarProperty Name="userrid" ColumnName="userrid" />
+          <ScalarProperty Name="system" ColumnName="system" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+          <ScalarProperty Name="creditslower" ColumnName="creditslower" />
+          <ScalarProperty Name="creditsupper" ColumnName="creditsupper" />
+          <ScalarProperty Name="limitdays" ColumnName="limitdays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_users">
+      <EntityTypeMapping TypeName="brnmallModel.bma_users">
+        <MappingFragment StoreEntitySet="bma_users">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="userrid" ColumnName="userrid" />
+          <ScalarProperty Name="storeid" ColumnName="storeid" />
+          <ScalarProperty Name="mallagid" ColumnName="mallagid" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+          <ScalarProperty Name="paycredits" ColumnName="paycredits" />
+          <ScalarProperty Name="rankcredits" ColumnName="rankcredits" />
+          <ScalarProperty Name="verifyemail" ColumnName="verifyemail" />
+          <ScalarProperty Name="verifymobile" ColumnName="verifymobile" />
+          <ScalarProperty Name="liftbantime" ColumnName="liftbantime" />
+          <ScalarProperty Name="salt" ColumnName="salt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_friendlinks">
+      <EntityTypeMapping TypeName="brnmallModel.bma_friendlinks">
+        <MappingFragment StoreEntitySet="bma_friendlinks">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="target" ColumnName="target" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_helps">
+      <EntityTypeMapping TypeName="brnmallModel.bma_helps">
+        <MappingFragment StoreEntitySet="bma_helps">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_malladminactions">
+      <EntityTypeMapping TypeName="brnmallModel.bma_malladminactions">
+        <MappingFragment StoreEntitySet="bma_malladminactions">
+          <ScalarProperty Name="aid" ColumnName="aid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_navs">
+      <EntityTypeMapping TypeName="brnmallModel.bma_navs">
+        <MappingFragment StoreEntitySet="bma_navs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="layer" ColumnName="layer" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="target" ColumnName="target" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bma_shipcompanies">
+      <EntityTypeMapping TypeName="brnmallModel.bma_shipcompanies">
+        <MappingFragment StoreEntitySet="bma_shipcompanies">
+          <ScalarProperty Name="shipcoid" ColumnName="shipcoid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="displayorder" ColumnName="displayorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

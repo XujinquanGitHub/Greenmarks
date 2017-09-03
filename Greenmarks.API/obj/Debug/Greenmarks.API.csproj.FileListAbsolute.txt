@@ -1,0 +1,190 @@
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\ApplicationInsights.config
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\csc.exe
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\csc.exe.config
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\csc.rsp
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\csi.exe
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\csi.rsp
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\System.AppContext.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\vbc.exe
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\vbc.exe.config
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\vbc.rsp
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\VBCSCompiler.exe
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.API.dll.config
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.API.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.API.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Antlr3.Runtime.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.AI.Web.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.ApplicationInsights.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Newtonsoft.Json.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Net.Http.Formatting.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Helpers.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Http.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Http.WebHost.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Mvc.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Optimization.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Razor.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.Razor.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\WebGrease.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Newtonsoft.Json.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Net.Http.Formatting.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Helpers.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Http.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Http.WebHost.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Mvc.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Optimization.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.Razor.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.Razor.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Antlr3.Runtime.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.ApplicationInsights.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Microsoft.AI.Web.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\obj\Debug\Greenmarks.API.csprojResolveAssemblyReference.cache
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\obj\Debug\Greenmarks.API.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\obj\Debug\Greenmarks.API.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.BLL.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.Common.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.Model.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.DAL.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\EntityFramework.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.BLL.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.Common.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.Model.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.Model.dll.config
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\Greenmarks.DAL.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\EntityFramework.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.API\bin\zh-Hans\EntityFramework.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\ApplicationInsights.config
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\csc.exe
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\csc.exe.config
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\csc.rsp
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\csi.exe
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\csi.rsp
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\System.AppContext.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\System.Collections.Immutable.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\System.IO.FileSystem.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\System.Reflection.Metadata.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\vbc.exe
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\vbc.exe.config
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\vbc.rsp
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\VBCSCompiler.exe
+D:\gitProject\Greenmarks\Greenmarks.API\bin\roslyn\VBCSCompiler.exe.config
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.API.dll.config
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.API.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.API.pdb
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Antlr3.Runtime.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.BLL.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.Common.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.Model.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.AI.Agent.Intercept.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.AI.DependencyCollector.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.AI.Web.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.AI.WindowsServer.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.ApplicationInsights.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.Web.Infrastructure.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Newtonsoft.Json.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Net.Http.Formatting.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Helpers.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Http.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Http.WebHost.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Mvc.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Optimization.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Razor.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.Deployment.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.Razor.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\WebGrease.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.DAL.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\EntityFramework.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.BLL.pdb
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.Common.pdb
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.Model.pdb
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.Model.dll.config
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Newtonsoft.Json.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Net.Http.Formatting.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Helpers.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Http.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Http.WebHost.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Mvc.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Optimization.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.Razor.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.Deployment.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\System.Web.WebPages.Razor.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Antlr3.Runtime.pdb
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.ApplicationInsights.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.AI.DependencyCollector.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.AI.WindowsServer.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Microsoft.AI.Web.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\Greenmarks.DAL.pdb
+D:\gitProject\Greenmarks\Greenmarks.API\bin\EntityFramework.xml
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Http.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Optimization.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\bin\zh-Hans\EntityFramework.resources.dll
+D:\gitProject\Greenmarks\Greenmarks.API\obj\Debug\Greenmarks.API.csprojResolveAssemblyReference.cache
+D:\gitProject\Greenmarks\Greenmarks.API\obj\Debug\Greenmarks.API.dll
+D:\gitProject\Greenmarks\Greenmarks.API\obj\Debug\Greenmarks.API.pdb

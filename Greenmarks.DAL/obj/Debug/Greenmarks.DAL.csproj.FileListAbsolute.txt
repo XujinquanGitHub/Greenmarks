@@ -1,0 +1,15 @@
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\obj\Debug\Greenmarks.DAL.csprojResolveAssemblyReference.cache
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\Greenmarks.DAL.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\Greenmarks.DAL.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\EntityFramework.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\Greenmarks.Common.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\Greenmarks.Model.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\Greenmarks.Common.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\Greenmarks.Model.pdb
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\Greenmarks.Model.dll.config
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\EntityFramework.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\obj\Debug\Greenmarks.DAL.dll
+C:\Users\xujinquan\documents\visual studio 2017\Projects\Greenmarks\Greenmarks.DAL\obj\Debug\Greenmarks.DAL.pdb

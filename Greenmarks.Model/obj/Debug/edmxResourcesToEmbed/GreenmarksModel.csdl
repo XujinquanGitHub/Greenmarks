@@ -1,0 +1,1169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="brnmallModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="bma_advertpositions">
+    <Key>
+      <PropertyRef Name="adposid" />
+    </Key>
+    <Property Name="adposid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_adverts">
+    <Key>
+      <PropertyRef Name="adid" />
+    </Key>
+    <Property Name="adid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="clickcount" Type="Int32" Nullable="false" />
+    <Property Name="adposid" Type="Int16" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="starttime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="image" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="extfield1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="extfield2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="extfield3" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="extfield4" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="extfield5" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_attributegroups">
+    <Key>
+      <PropertyRef Name="attrgroupid" />
+    </Key>
+    <Property Name="attrgroupid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cateid" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_attributes">
+    <Key>
+      <PropertyRef Name="attrid" />
+    </Key>
+    <Property Name="attrid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="cateid" Type="Int16" Nullable="false" />
+    <Property Name="attrgroupid" Type="Int16" Nullable="false" />
+    <Property Name="showtype" Type="Byte" Nullable="false" />
+    <Property Name="isfilter" Type="Byte" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_attributevalues">
+    <Key>
+      <PropertyRef Name="attrvalueid" />
+    </Key>
+    <Property Name="attrvalueid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="attrvalue" Type="String" MaxLength="70" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="isinput" Type="Byte" Nullable="false" />
+    <Property Name="attrname" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="attrdisplayorder" Type="Int32" Nullable="false" />
+    <Property Name="attrshowtype" Type="Byte" Nullable="false" />
+    <Property Name="attrvaluedisplayorder" Type="Int32" Nullable="false" />
+    <Property Name="attrgroupid" Type="Int16" Nullable="false" />
+    <Property Name="attrgroupname" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="attrgroupdisplayorder" Type="Int32" Nullable="false" />
+    <Property Name="attrid" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_bannedips">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="liftbantime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_brands">
+    <Key>
+      <PropertyRef Name="brandid" />
+    </Key>
+    <Property Name="brandid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="logo" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_browsehistories">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="times" Type="Int32" Nullable="false" />
+    <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_buysendproducts">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pmid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_buysendpromotions">
+    <Key>
+      <PropertyRef Name="pmid" />
+    </Key>
+    <Property Name="pmid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="starttime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="userranklower" Type="Int16" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="type" Type="Byte" Nullable="false" />
+    <Property Name="buycount" Type="Byte" Nullable="false" />
+    <Property Name="sendcount" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_categories">
+    <Key>
+      <PropertyRef Name="cateid" />
+    </Key>
+    <Property Name="cateid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="60" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="pricerange" Type="String" MaxLength="200" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="parentid" Type="Int16" Nullable="false" />
+    <Property Name="layer" Type="Byte" Nullable="false" />
+    <Property Name="haschild" Type="Byte" Nullable="false" />
+    <Property Name="path" Type="String" MaxLength="100" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_couponproducts">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="coupontypeid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_coupons">
+    <Key>
+      <PropertyRef Name="couponid" />
+    </Key>
+    <Property Name="couponid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="couponsn" Type="String" MaxLength="16" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="coupontypeid" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="oid" Type="Int32" Nullable="false" />
+    <Property Name="usetime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="useip" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="money" Type="Int32" Nullable="false" />
+    <Property Name="activatetime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="activateip" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="createuid" Type="Int32" Nullable="false" />
+    <Property Name="createoid" Type="Int32" Nullable="false" />
+    <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="createip" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_coupontypes">
+    <Key>
+      <PropertyRef Name="coupontypeid" />
+    </Key>
+    <Property Name="coupontypeid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="money" Type="Int32" Nullable="false" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+    <Property Name="sendmode" Type="Byte" Nullable="false" />
+    <Property Name="getmode" Type="Byte" Nullable="false" />
+    <Property Name="usemode" Type="Byte" Nullable="false" />
+    <Property Name="userranklower" Type="Int16" Nullable="false" />
+    <Property Name="orderamountlower" Type="Int32" Nullable="false" />
+    <Property Name="limitstorecid" Type="Int32" Nullable="false" />
+    <Property Name="limitproduct" Type="Byte" Nullable="false" />
+    <Property Name="sendstarttime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="sendendtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="useexpiretime" Type="Int32" Nullable="false" />
+    <Property Name="usestarttime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="useendtime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_creditlogs">
+    <Key>
+      <PropertyRef Name="logid" />
+    </Key>
+    <Property Name="logid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="paycredits" Type="Int32" Nullable="false" />
+    <Property Name="rankcredits" Type="Int32" Nullable="false" />
+    <Property Name="action" Type="Byte" Nullable="false" />
+    <Property Name="actioncode" Type="Int32" Nullable="false" />
+    <Property Name="actiontime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="actiondes" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="operator" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_eventlogs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="key" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="server" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="executetime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_favoriteproducts">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="addtime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_favoritestores">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="addtime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_filterwords">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="match" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="replace" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_fullcutproducts">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pmid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_fullcutpromotions">
+    <Key>
+      <PropertyRef Name="pmid" />
+    </Key>
+    <Property Name="pmid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="Byte" Nullable="false" />
+    <Property Name="starttime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="userranklower" Type="Int16" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="limitmoney1" Type="Int32" Nullable="false" />
+    <Property Name="cutmoney1" Type="Int32" Nullable="false" />
+    <Property Name="limitmoney2" Type="Int32" Nullable="false" />
+    <Property Name="cutmoney2" Type="Int32" Nullable="false" />
+    <Property Name="limitmoney3" Type="Int32" Nullable="false" />
+    <Property Name="cutmoney3" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_fullsendproducts">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pmid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_fullsendpromotions">
+    <Key>
+      <PropertyRef Name="pmid" />
+    </Key>
+    <Property Name="pmid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="starttime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="userranklower" Type="Int16" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="limitmoney" Type="Int32" Nullable="false" />
+    <Property Name="addmoney" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_giftpromotions">
+    <Key>
+      <PropertyRef Name="pmid" />
+    </Key>
+    <Property Name="pmid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="starttime1" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime1" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="starttime2" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime2" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="starttime3" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime3" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="userranklower" Type="Int16" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="quotaupper" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_gifts">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pmid" Type="Int32" Nullable="false" />
+    <Property Name="giftid" Type="Int32" Nullable="false" />
+    <Property Name="number" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_loginfaillogs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="loginip" Type="Int64" Nullable="false" />
+    <Property Name="failtimes" Type="Byte" Nullable="false" />
+    <Property Name="lastlogintime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_malladmingroups">
+    <Key>
+      <PropertyRef Name="mallagid" />
+    </Key>
+    <Property Name="mallagid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="actionlist" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_malladminlogs">
+    <Key>
+      <PropertyRef Name="logid" />
+    </Key>
+    <Property Name="logid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="nickname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mallagid" Type="Int16" Nullable="false" />
+    <Property Name="mallagtitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="operation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="operatetime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_news">
+    <Key>
+      <PropertyRef Name="newsid" />
+    </Key>
+    <Property Name="newsid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="newstypeid" Type="Int16" Nullable="false" />
+    <Property Name="isshow" Type="Byte" Nullable="false" />
+    <Property Name="istop" Type="Byte" Nullable="false" />
+    <Property Name="ishome" Type="Byte" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+    <Property Name="addtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="body" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_newstypes">
+    <Key>
+      <PropertyRef Name="newstypeid" />
+    </Key>
+    <Property Name="newstypeid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="60" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_oauth">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="openid" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="server" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_onlinetime">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="total" Type="Int32" Nullable="false" />
+    <Property Name="year" Type="Int32" Nullable="false" />
+    <Property Name="month" Type="Int16" Nullable="false" />
+    <Property Name="week" Type="Int16" Nullable="false" />
+    <Property Name="day" Type="Int16" Nullable="false" />
+    <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_onlineusers">
+    <Key>
+      <PropertyRef Name="olid" />
+    </Key>
+    <Property Name="olid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="sid" Type="String" MaxLength="16" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="nickname" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ip" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="regionid" Type="Int16" Nullable="false" />
+    <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_orderactions">
+    <Key>
+      <PropertyRef Name="aid" />
+    </Key>
+    <Property Name="aid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="oid" Type="Int32" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="realname" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="actiontype" Type="Byte" Nullable="false" />
+    <Property Name="actiontime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="actiondes" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_orderafterservices">
+    <Key>
+      <PropertyRef Name="asid" />
+    </Key>
+    <Property Name="asid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="oid" Type="Int32" Nullable="false" />
+    <Property Name="recordid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="cateid" Type="Int16" Nullable="false" />
+    <Property Name="brandid" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="pname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pshowimg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+    <Property Name="money" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="type" Type="Byte" Nullable="false" />
+    <Property Name="applyreason" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="applytime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="checkresult" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="checktime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="shipcoid1" Type="Int16" Nullable="false" />
+    <Property Name="shipconame1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="shipsn1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="regionid" Type="Int16" Nullable="false" />
+    <Property Name="consignee" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mobile" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="zipcode" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sendtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="receivetime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="shipcoid2" Type="Int16" Nullable="false" />
+    <Property Name="shipconame2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="shipsn2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="backtime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_orderproducts">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="oid" Type="Int32" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="sid" Type="String" MaxLength="16" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="psn" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cateid" Type="Int16" Nullable="false" />
+    <Property Name="brandid" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="storecid" Type="Int32" Nullable="false" />
+    <Property Name="storestid" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="showimg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="discountprice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="shopprice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="costprice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="marketprice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="isreview" Type="Byte" Nullable="false" />
+    <Property Name="realcount" Type="Int32" Nullable="false" />
+    <Property Name="buycount" Type="Int32" Nullable="false" />
+    <Property Name="sendcount" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="Byte" Nullable="false" />
+    <Property Name="paycredits" Type="Int32" Nullable="false" />
+    <Property Name="coupontypeid" Type="Int32" Nullable="false" />
+    <Property Name="extcode1" Type="Int32" Nullable="false" />
+    <Property Name="extcode2" Type="Int32" Nullable="false" />
+    <Property Name="extcode3" Type="Int32" Nullable="false" />
+    <Property Name="extcode4" Type="Int32" Nullable="false" />
+    <Property Name="extcode5" Type="Int32" Nullable="false" />
+    <Property Name="addtime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_orderrefunds">
+    <Key>
+      <PropertyRef Name="refundid" />
+    </Key>
+    <Property Name="refundid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="storename" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="oid" Type="Int32" Nullable="false" />
+    <Property Name="osn" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="asid" Type="Int32" Nullable="false" />
+    <Property Name="paysystemname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="payfriendname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="paysn" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="paymoney" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="refundmoney" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="applytime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="refundsn" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="refundtime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_orders">
+    <Key>
+      <PropertyRef Name="oid" />
+    </Key>
+    <Property Name="oid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="osn" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="orderstate" Type="Byte" Nullable="false" />
+    <Property Name="productamount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="orderamount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="surplusmoney" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="isreview" Type="Byte" Nullable="false" />
+    <Property Name="addtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="storename" Type="String" MaxLength="60" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="shipsn" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="shipcoid" Type="Int16" Nullable="false" />
+    <Property Name="shipconame" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="shiptime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="paymode" Type="Byte" Nullable="false" />
+    <Property Name="paysn" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="paysystemname" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="payfriendname" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="paytime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="regionid" Type="Int16" Nullable="false" />
+    <Property Name="consignee" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mobile" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="zipcode" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="besttime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="shipfee" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="fullcut" Type="Int32" Nullable="false" />
+    <Property Name="discount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="paycreditcount" Type="Int32" Nullable="false" />
+    <Property Name="paycreditmoney" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="couponmoney" Type="Int32" Nullable="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="buyerremark" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ip" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_productattributes">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="attrid" Type="Int16" Nullable="false" />
+    <Property Name="attrvalueid" Type="Int32" Nullable="false" />
+    <Property Name="inputvalue" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_productconsults">
+    <Key>
+      <PropertyRef Name="consultid" />
+    </Key>
+    <Property Name="consultid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="consulttypeid" Type="Byte" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="consultuid" Type="Int32" Nullable="false" />
+    <Property Name="replyuid" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="consulttime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="replytime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="consultmessage" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="replymessage" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="consultnickname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="replynickname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pshowimg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="consultip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="replyip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_productconsulttypes">
+    <Key>
+      <PropertyRef Name="consulttypeid" />
+    </Key>
+    <Property Name="consulttypeid" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_productimages">
+    <Key>
+      <PropertyRef Name="pimgid" />
+    </Key>
+    <Property Name="pimgid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="showimg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ismain" Type="Byte" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_productkeywords">
+    <Key>
+      <PropertyRef Name="keywordid" />
+    </Key>
+    <Property Name="keywordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="keyword" Type="String" MaxLength="40" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="relevancy" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_productreviewquality">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="reviewid" Type="Int32" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="votetime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_productreviews">
+    <Key>
+      <PropertyRef Name="reviewid" />
+    </Key>
+    <Property Name="reviewid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="oprid" Type="Int32" Nullable="false" />
+    <Property Name="oid" Type="Int32" Nullable="false" />
+    <Property Name="parentid" Type="Int32" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="star" Type="Byte" Nullable="false" />
+    <Property Name="quality" Type="Int16" Nullable="false" />
+    <Property Name="message" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="reviewtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="paycredits" Type="Int32" Nullable="false" />
+    <Property Name="pname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pshowimg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="buytime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_products">
+    <Key>
+      <PropertyRef Name="pid" />
+    </Key>
+    <Property Name="pid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="psn" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cateid" Type="Int16" Nullable="false" />
+    <Property Name="brandid" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="storecid" Type="Int32" Nullable="false" />
+    <Property Name="storestid" Type="Int32" Nullable="false" />
+    <Property Name="skugid" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="shopprice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="marketprice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="costprice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="isbest" Type="Byte" Nullable="false" />
+    <Property Name="ishot" Type="Byte" Nullable="false" />
+    <Property Name="isnew" Type="Byte" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="showimg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="salecount" Type="Int32" Nullable="false" />
+    <Property Name="visitcount" Type="Int32" Nullable="false" />
+    <Property Name="reviewcount" Type="Int32" Nullable="false" />
+    <Property Name="star1" Type="Int32" Nullable="false" />
+    <Property Name="star2" Type="Int32" Nullable="false" />
+    <Property Name="star3" Type="Int32" Nullable="false" />
+    <Property Name="star4" Type="Int32" Nullable="false" />
+    <Property Name="star5" Type="Int32" Nullable="false" />
+    <Property Name="addtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_productskus">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="skugid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="attrid" Type="Int16" Nullable="false" />
+    <Property Name="attrvalueid" Type="Int32" Nullable="false" />
+    <Property Name="inputvalue" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_productstats">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="category" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="value" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_productstocks">
+    <Key>
+      <PropertyRef Name="pid" />
+    </Key>
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="number" Type="Int32" Nullable="false" />
+    <Property Name="limit" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_pvstats">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="category" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="value" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_regions">
+    <Key>
+      <PropertyRef Name="regionid" />
+    </Key>
+    <Property Name="regionid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="spell" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="shortspell" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+    <Property Name="parentid" Type="Int16" Nullable="false" />
+    <Property Name="layer" Type="Byte" Nullable="false" />
+    <Property Name="provinceid" Type="Int16" Nullable="false" />
+    <Property Name="provincename" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="cityid" Type="Int16" Nullable="false" />
+    <Property Name="cityname" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_relateproducts">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="relatepid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_searchhistories">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="word" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="times" Type="Int32" Nullable="false" />
+    <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_shipaddresses">
+    <Key>
+      <PropertyRef Name="said" />
+    </Key>
+    <Property Name="said" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="regionid" Type="Int16" Nullable="false" />
+    <Property Name="isdefault" Type="Byte" Nullable="false" />
+    <Property Name="alias" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="consignee" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mobile" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="zipcode" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_singlepromotions">
+    <Key>
+      <PropertyRef Name="pmid" />
+    </Key>
+    <Property Name="pmid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="starttime1" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime1" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="starttime2" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime2" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="starttime3" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime3" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="userranklower" Type="Int16" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="slogan" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="discounttype" Type="Byte" Nullable="false" />
+    <Property Name="discountvalue" Type="Int32" Nullable="false" />
+    <Property Name="coupontypeid" Type="Int32" Nullable="false" />
+    <Property Name="paycredits" Type="Int32" Nullable="false" />
+    <Property Name="isstock" Type="Byte" Nullable="false" />
+    <Property Name="stock" Type="Int32" Nullable="false" />
+    <Property Name="quotalower" Type="Int32" Nullable="false" />
+    <Property Name="quotaupper" Type="Int32" Nullable="false" />
+    <Property Name="allowbuycount" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_storeadminlogs">
+    <Key>
+      <PropertyRef Name="logid" />
+    </Key>
+    <Property Name="logid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="nickname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="storename" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="operation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="operatetime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_storeclasses">
+    <Key>
+      <PropertyRef Name="storecid" />
+    </Key>
+    <Property Name="storecid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="60" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="parentid" Type="Int32" Nullable="false" />
+    <Property Name="layer" Type="Byte" Nullable="false" />
+    <Property Name="haschild" Type="Byte" Nullable="false" />
+    <Property Name="path" Type="String" MaxLength="100" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_storeindustries">
+    <Key>
+      <PropertyRef Name="storeiid" />
+    </Key>
+    <Property Name="storeiid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_storekeepers">
+    <Key>
+      <PropertyRef Name="storeid" />
+    </Key>
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="idcard" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_storeranks">
+    <Key>
+      <PropertyRef Name="storerid" />
+    </Key>
+    <Property Name="storerid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="avatar" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="honestieslower" Type="Int32" Nullable="false" />
+    <Property Name="honestiesupper" Type="Int32" Nullable="false" />
+    <Property Name="productcount" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_storereviews">
+    <Key>
+      <PropertyRef Name="reviewid" />
+    </Key>
+    <Property Name="reviewid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="oid" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="descriptionstar" Type="Byte" Nullable="false" />
+    <Property Name="servicestar" Type="Byte" Nullable="false" />
+    <Property Name="shipstar" Type="Byte" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="reviewtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_stores">
+    <Key>
+      <PropertyRef Name="storeid" />
+    </Key>
+    <Property Name="storeid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="60" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="regionid" Type="Int16" Nullable="false" />
+    <Property Name="storerid" Type="Int16" Nullable="false" />
+    <Property Name="storeiid" Type="Int16" Nullable="false" />
+    <Property Name="logo" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="mobile" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="qq" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ww" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="depoint" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="sepoint" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="shpoint" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="honesties" Type="Int32" Nullable="false" />
+    <Property Name="stateendtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="theme" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="banner" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="announcement" Type="String" MaxLength="200" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="300" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_storeshipfees">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="storestid" Type="Int32" Nullable="false" />
+    <Property Name="regionid" Type="Int32" Nullable="false" />
+    <Property Name="startvalue" Type="Int32" Nullable="false" />
+    <Property Name="startfee" Type="Int32" Nullable="false" />
+    <Property Name="addvalue" Type="Int32" Nullable="false" />
+    <Property Name="addfee" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_storeshiptemplates">
+    <Key>
+      <PropertyRef Name="storestid" />
+    </Key>
+    <Property Name="storestid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="free" Type="Byte" Nullable="false" />
+    <Property Name="type" Type="Byte" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_suitproducts">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pmid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="discount" Type="Int32" Nullable="false" />
+    <Property Name="number" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_suitpromotions">
+    <Key>
+      <PropertyRef Name="pmid" />
+    </Key>
+    <Property Name="pmid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="starttime1" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime1" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="starttime2" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime2" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="starttime3" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime3" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="userranklower" Type="Int16" Nullable="false" />
+    <Property Name="state" Type="Byte" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="quotaupper" Type="Int32" Nullable="false" />
+    <Property Name="onlyonce" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_timeproducts">
+    <Key>
+      <PropertyRef Name="recordid" />
+    </Key>
+    <Property Name="recordid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="onsalestate" Type="Byte" Nullable="false" />
+    <Property Name="outsalestate" Type="Byte" Nullable="false" />
+    <Property Name="onsaletime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="outsaletime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="bma_topics">
+    <Key>
+      <PropertyRef Name="topicid" />
+    </Key>
+    <Property Name="topicid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="starttime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="isshow" Type="Byte" Nullable="false" />
+    <Property Name="sn" Type="String" MaxLength="16" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="headhtml" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="bodyhtml" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_userdetails">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="lastvisittime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lastvisitip" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="lastvisitrgid" Type="Int16" Nullable="false" />
+    <Property Name="registertime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="registerip" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="registerrgid" Type="Int16" Nullable="false" />
+    <Property Name="gender" Type="Byte" Nullable="false" />
+    <Property Name="realname" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="bday" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idcard" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="regionid" Type="Int16" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="bio" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_userranks">
+    <Key>
+      <PropertyRef Name="userrid" />
+    </Key>
+    <Property Name="userrid" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="system" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="avatar" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="creditslower" Type="Int32" Nullable="false" />
+    <Property Name="creditsupper" Type="Int32" Nullable="false" />
+    <Property Name="limitdays" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_users">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="mobile" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="userrid" Type="Int16" Nullable="false" />
+    <Property Name="storeid" Type="Int32" Nullable="false" />
+    <Property Name="mallagid" Type="Int16" Nullable="false" />
+    <Property Name="nickname" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="avatar" Type="String" MaxLength="40" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="paycredits" Type="Int32" Nullable="false" />
+    <Property Name="rankcredits" Type="Int32" Nullable="false" />
+    <Property Name="verifyemail" Type="Byte" Nullable="false" />
+    <Property Name="verifymobile" Type="Byte" Nullable="false" />
+    <Property Name="liftbantime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="salt" Type="String" MaxLength="6" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_friendlinks">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="title" />
+      <PropertyRef Name="logo" />
+      <PropertyRef Name="url" />
+      <PropertyRef Name="target" />
+      <PropertyRef Name="displayorder" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="logo" Type="String" MaxLength="250" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="url" Type="String" MaxLength="250" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="target" Type="Int32" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_helps">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="pid" />
+      <PropertyRef Name="title" />
+      <PropertyRef Name="url" />
+      <PropertyRef Name="description" />
+      <PropertyRef Name="displayorder" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="60" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="url" Type="String" MaxLength="200" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_malladminactions">
+    <Key>
+      <PropertyRef Name="aid" />
+      <PropertyRef Name="title" />
+      <PropertyRef Name="action" />
+      <PropertyRef Name="parentid" />
+      <PropertyRef Name="displayorder" />
+    </Key>
+    <Property Name="aid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="60" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="action" Type="String" MaxLength="100" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="parentid" Type="Int32" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_navs">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="pid" />
+      <PropertyRef Name="layer" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="title" />
+      <PropertyRef Name="url" />
+      <PropertyRef Name="target" />
+      <PropertyRef Name="displayorder" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="layer" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="250" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="url" Type="String" MaxLength="250" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="target" Type="Int32" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bma_shipcompanies">
+    <Key>
+      <PropertyRef Name="shipcoid" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="displayorder" />
+    </Key>
+    <Property Name="shipcoid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="displayorder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="brnmallEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="bma_advertpositions" EntityType="Self.bma_advertpositions" />
+    <EntitySet Name="bma_adverts" EntityType="Self.bma_adverts" />
+    <EntitySet Name="bma_attributegroups" EntityType="Self.bma_attributegroups" />
+    <EntitySet Name="bma_attributes" EntityType="Self.bma_attributes" />
+    <EntitySet Name="bma_attributevalues" EntityType="Self.bma_attributevalues" />
+    <EntitySet Name="bma_bannedips" EntityType="Self.bma_bannedips" />
+    <EntitySet Name="bma_brands" EntityType="Self.bma_brands" />
+    <EntitySet Name="bma_browsehistories" EntityType="Self.bma_browsehistories" />
+    <EntitySet Name="bma_buysendproducts" EntityType="Self.bma_buysendproducts" />
+    <EntitySet Name="bma_buysendpromotions" EntityType="Self.bma_buysendpromotions" />
+    <EntitySet Name="bma_categories" EntityType="Self.bma_categories" />
+    <EntitySet Name="bma_couponproducts" EntityType="Self.bma_couponproducts" />
+    <EntitySet Name="bma_coupons" EntityType="Self.bma_coupons" />
+    <EntitySet Name="bma_coupontypes" EntityType="Self.bma_coupontypes" />
+    <EntitySet Name="bma_creditlogs" EntityType="Self.bma_creditlogs" />
+    <EntitySet Name="bma_eventlogs" EntityType="Self.bma_eventlogs" />
+    <EntitySet Name="bma_favoriteproducts" EntityType="Self.bma_favoriteproducts" />
+    <EntitySet Name="bma_favoritestores" EntityType="Self.bma_favoritestores" />
+    <EntitySet Name="bma_filterwords" EntityType="Self.bma_filterwords" />
+    <EntitySet Name="bma_fullcutproducts" EntityType="Self.bma_fullcutproducts" />
+    <EntitySet Name="bma_fullcutpromotions" EntityType="Self.bma_fullcutpromotions" />
+    <EntitySet Name="bma_fullsendproducts" EntityType="Self.bma_fullsendproducts" />
+    <EntitySet Name="bma_fullsendpromotions" EntityType="Self.bma_fullsendpromotions" />
+    <EntitySet Name="bma_giftpromotions" EntityType="Self.bma_giftpromotions" />
+    <EntitySet Name="bma_gifts" EntityType="Self.bma_gifts" />
+    <EntitySet Name="bma_loginfaillogs" EntityType="Self.bma_loginfaillogs" />
+    <EntitySet Name="bma_malladmingroups" EntityType="Self.bma_malladmingroups" />
+    <EntitySet Name="bma_malladminlogs" EntityType="Self.bma_malladminlogs" />
+    <EntitySet Name="bma_news" EntityType="Self.bma_news" />
+    <EntitySet Name="bma_newstypes" EntityType="Self.bma_newstypes" />
+    <EntitySet Name="bma_oauth" EntityType="Self.bma_oauth" />
+    <EntitySet Name="bma_onlinetime" EntityType="Self.bma_onlinetime" />
+    <EntitySet Name="bma_onlineusers" EntityType="Self.bma_onlineusers" />
+    <EntitySet Name="bma_orderactions" EntityType="Self.bma_orderactions" />
+    <EntitySet Name="bma_orderafterservices" EntityType="Self.bma_orderafterservices" />
+    <EntitySet Name="bma_orderproducts" EntityType="Self.bma_orderproducts" />
+    <EntitySet Name="bma_orderrefunds" EntityType="Self.bma_orderrefunds" />
+    <EntitySet Name="bma_orders" EntityType="Self.bma_orders" />
+    <EntitySet Name="bma_productattributes" EntityType="Self.bma_productattributes" />
+    <EntitySet Name="bma_productconsults" EntityType="Self.bma_productconsults" />
+    <EntitySet Name="bma_productconsulttypes" EntityType="Self.bma_productconsulttypes" />
+    <EntitySet Name="bma_productimages" EntityType="Self.bma_productimages" />
+    <EntitySet Name="bma_productkeywords" EntityType="Self.bma_productkeywords" />
+    <EntitySet Name="bma_productreviewquality" EntityType="Self.bma_productreviewquality" />
+    <EntitySet Name="bma_productreviews" EntityType="Self.bma_productreviews" />
+    <EntitySet Name="bma_products" EntityType="Self.bma_products" />
+    <EntitySet Name="bma_productskus" EntityType="Self.bma_productskus" />
+    <EntitySet Name="bma_productstats" EntityType="Self.bma_productstats" />
+    <EntitySet Name="bma_productstocks" EntityType="Self.bma_productstocks" />
+    <EntitySet Name="bma_pvstats" EntityType="Self.bma_pvstats" />
+    <EntitySet Name="bma_regions" EntityType="Self.bma_regions" />
+    <EntitySet Name="bma_relateproducts" EntityType="Self.bma_relateproducts" />
+    <EntitySet Name="bma_searchhistories" EntityType="Self.bma_searchhistories" />
+    <EntitySet Name="bma_shipaddresses" EntityType="Self.bma_shipaddresses" />
+    <EntitySet Name="bma_singlepromotions" EntityType="Self.bma_singlepromotions" />
+    <EntitySet Name="bma_storeadminlogs" EntityType="Self.bma_storeadminlogs" />
+    <EntitySet Name="bma_storeclasses" EntityType="Self.bma_storeclasses" />
+    <EntitySet Name="bma_storeindustries" EntityType="Self.bma_storeindustries" />
+    <EntitySet Name="bma_storekeepers" EntityType="Self.bma_storekeepers" />
+    <EntitySet Name="bma_storeranks" EntityType="Self.bma_storeranks" />
+    <EntitySet Name="bma_storereviews" EntityType="Self.bma_storereviews" />
+    <EntitySet Name="bma_stores" EntityType="Self.bma_stores" />
+    <EntitySet Name="bma_storeshipfees" EntityType="Self.bma_storeshipfees" />
+    <EntitySet Name="bma_storeshiptemplates" EntityType="Self.bma_storeshiptemplates" />
+    <EntitySet Name="bma_suitproducts" EntityType="Self.bma_suitproducts" />
+    <EntitySet Name="bma_suitpromotions" EntityType="Self.bma_suitpromotions" />
+    <EntitySet Name="bma_timeproducts" EntityType="Self.bma_timeproducts" />
+    <EntitySet Name="bma_topics" EntityType="Self.bma_topics" />
+    <EntitySet Name="bma_userdetails" EntityType="Self.bma_userdetails" />
+    <EntitySet Name="bma_userranks" EntityType="Self.bma_userranks" />
+    <EntitySet Name="bma_users" EntityType="Self.bma_users" />
+    <EntitySet Name="bma_friendlinks" EntityType="Self.bma_friendlinks" />
+    <EntitySet Name="bma_helps" EntityType="Self.bma_helps" />
+    <EntitySet Name="bma_malladminactions" EntityType="Self.bma_malladminactions" />
+    <EntitySet Name="bma_navs" EntityType="Self.bma_navs" />
+    <EntitySet Name="bma_shipcompanies" EntityType="Self.bma_shipcompanies" />
+  </EntityContainer>
+</Schema>
